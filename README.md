@@ -2,4 +2,6 @@
 
 Version control exercise
 
-editing
+editing in VS
+
+Adding content using VS code editor
