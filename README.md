@@ -30,7 +30,7 @@ cd ~/Desktop/my-first-repo
 
 Create a virtual environment:
 ```sh
-conda create -n my-frist-env python=3.11
+conda create -n my-first-env python=3.11
 ```
 
 Activate the virtual environment:
