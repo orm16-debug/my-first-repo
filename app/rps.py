@@ -2,6 +2,8 @@ import random
 
 VALID_OPTIONS = ["rock", "paper", "scissors"]
 
+def generate_random_choice():
+    return random.choice(VALID_OPTIONS)
 
 def determine_winner(u, c):
     if u == "rock" and c == "rock":
@@ -31,7 +33,7 @@ if __name__ == "__main__":
     # ASK USER FOR AN INPUT (R/P/S)
 
     user_choice = input("Please choose one of 'rock', 'paper', or 'scissors': ")
-    print("User:", user_choice)
+    print("USER:", user_choice)
 
     # VALIDATIONS
 
@@ -41,8 +43,9 @@ if __name__ == "__main__":
 
     # GENERATE RANDOM COMPUTER CHOICE
 
-    computer_choice = random.choice(VALID_OPTIONS)
-    print("Comp:", computer_choice)
+    # computer_choice = random.choice(VALID_OPTIONS)
+    computer_choice = generate_random_choice()
+    print("COMP:", computer_choice)
 
     # DETERMINE THE WINNER
 
