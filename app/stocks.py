@@ -6,6 +6,9 @@ import plotly.express as px
 load_dotenv()
 # loads environment variables from the ".env" file and recognizes them
 
+def format_usd(price):
+    return f"${price:.2f}"
+
 ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
 
 def fetch_stocks_csv(symbol="NFLX"):
